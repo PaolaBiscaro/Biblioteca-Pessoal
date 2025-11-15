@@ -7,6 +7,7 @@ class Livro(Base):
     id = Column("id_livro", Integer,primary_key=True, autoincrement=True)
     titulo = Column("titulo", String, nullable=False)
     autor = Column("autor", String, nullable=False)
+    olid = Column("olid", String, unique=True, nullable=False)
     
     def __init__(self, titulo, autor):
         self.titulo = titulo
