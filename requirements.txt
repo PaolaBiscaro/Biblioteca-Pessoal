@@ -3,3 +3,4 @@ uvicorn
 SQLAlchemy
 python-dotenv
 mysqlclient
+requests
